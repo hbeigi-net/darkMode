@@ -7,8 +7,8 @@ const Drawer = styled.div`
     bottom : 0 ; 
     width : ${props=> props.width}px; 
     left : ${props => props.open ? 0 : -(props.width+5)}px;
-    background-color :${props=> props.mode ==="dark"? "#b614c5": "#FFAAA7"} ; 
-    box-shadow :${props=>props.mode==='dark'?"0px 0px 2px 2px #b614c5 ":"0px 0px 2px 2px #FFAAA7 "},-10px 0px 16px 0 ${props=> props.mode==="dark" ? "skyblue":"darkcyan"}  ; 
+    background-color :${props=> props.mode ==="dark"? "#1C6DD0": "#C0D8C0"} ; 
+    box-shadow :${props=>props.mode==='dark'?"0px 0px 2px 2px #1C6DD0 ":"0px 0px 2px 2px #C0D8C0 "},-10px 0px 16px 0 ${props=> props.mode==="dark" ? "skyblue":"darkcyan"}  ; 
     padding : 5px ; 
     box-sizing : border-box ; 
     transition : all 432ms ease ; 

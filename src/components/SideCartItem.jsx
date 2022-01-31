@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from "styled-components"
+import IconButton from '@mui/material/IconButton';
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
 import { faker } from 'https://cdn.skypack.dev/@faker-js/faker';
 const Paper = styled.div`
   width : 100% ; 
@@ -24,13 +27,21 @@ export default function SideCartItem() {
       <li className='my-1'>
        <Paper>
           <div className='d-flex align-items-center justify-content-between'>
-            <div className="priceNode d-flex flex-column">
+            <div className="priceNode d-flex flex-column flex-grow-1">
                 <span className='price'> 999</span> <small className='text-success' style={{fontSize:"12px"}}>تومان</small>
             </div>
-            <div className="titleNode d-flex flex-column">
+            <div className="titleNode d-flex flex-column ms-3">
               <div className="productTitle"> عنوان محصول </div>
-              <div className="productCount">
-                
+              <div className="productCount d-flex justify-content-between">
+                <IconButton aria-label="increase" size="small">
+                    <AddIcon fontSize='small'/>
+                </IconButton>
+                <div className="countHolder">
+                  3
+                </div>
+                <IconButton aria-label="increase" size="small">
+                    <RemoveIcon fontSize='small'/>
+                </IconButton>
               </div>
             </div>
             <div className="bannerNode positon-relative">

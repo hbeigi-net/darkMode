@@ -4,6 +4,7 @@ import ThemeContext ,{Theme} from "./contexts/ThemeContext"
 import {useState , useEffect} from "react"
 import SideCart from "./components/SideCart";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ShopProduct from "./components/ShopProduct"
 import {Routes , Route , Link} from "react-router-dom"
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
     <ThemeContext.Provider value={theme} >
       <GlobalStyle theme={theme}/>
       <ThemeToggle toggler={setMode}/>
-      <SideCart />
+      <ShopProduct/>
+      {/* <SideCart /> */}
       {/* <Link to="/about">
         hello world
       </Link>

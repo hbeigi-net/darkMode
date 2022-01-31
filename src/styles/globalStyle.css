@@ -6,3 +6,8 @@
 body{
     font-family: mikhak !important ; 
 }
+ul li a.active
+{
+    color: red ;
+    font-weight: bold;
+}

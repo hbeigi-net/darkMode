@@ -1,6 +1,4 @@
 import React from 'react';
-import {useState } from "react"
-import {useContext} from "react"
 import {useTheme} from "../contexts/ThemeContext"
 import styled from "styled-components"
 import { faker } from 'https://cdn.skypack.dev/@faker-js/faker';

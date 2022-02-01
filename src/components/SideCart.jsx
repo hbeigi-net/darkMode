@@ -24,7 +24,7 @@ export default function SideCart() {
 
     return (
       <>
-        <button onClick={(e)=>setOpen(!open)}  style={{right : "50px" , position : "fixed"}}>
+        <button onClick={(e)=>setOpen(!open)}  style={{right : "50px"}}>
           toggle
         </button>
         <Drawer width ={300} open ={!open} mode ={theme.mode} >

@@ -1,7 +1,6 @@
 import Drawer from "./subc/drawer";
 import {useState } from "react"
-import {useContext} from "react"
-import ThemeContext from "../contexts/ThemeContext"
+import {useTheme} from "../contexts/ThemeContext"
 import styled from "styled-components";
 import React from 'react';
 import SideCartItem from "./SideCartItem";
@@ -19,7 +18,7 @@ const List = styled.ul`
 
 `
 export default function SideCart() {
-  const theme = useContext(ThemeContext) ; 
+  const {theme}=useTheme(); 
     const [open , setOpen] = useState(true);
 
     return (

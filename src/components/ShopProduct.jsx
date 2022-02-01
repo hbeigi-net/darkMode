@@ -1,7 +1,7 @@
 import React from 'react';
 import {useState } from "react"
 import {useContext} from "react"
-import ThemeContext from "../contexts/ThemeContext"
+import {useTheme} from "../contexts/ThemeContext"
 import styled from "styled-components"
 import { faker } from 'https://cdn.skypack.dev/@faker-js/faker';
 import Btn2 from "./subc/btn2"
@@ -18,7 +18,7 @@ const Paper = styled.div`
 `
 export default function ShopProduct() {
 
-    const theme  = useContext(ThemeContext);
+    const {theme} = useTheme();
   return <>
     
     <Paper>

@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-// import styled from 'styled-components';
 import {useTheme} from "../contexts/ThemeContext"
-
 import Switch from '@mui/material/Switch';
 import { styled } from '@mui/material/styles';
+
 const CsutomSwitch = styled(Switch)(({ theme }) => ({
   width: 50,
   height: 27,
@@ -50,8 +49,7 @@ const CsutomSwitch = styled(Switch)(({ theme }) => ({
     borderRadius: 20 / 2,
   },
 }));
-
-
+q
 export default function ThemeToggle() {
     const {mode , setMode , theme} =useTheme();
     const [checked, setChecked] = useState(false);

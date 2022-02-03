@@ -15,6 +15,7 @@ function App()
       <>
           <GlobalStyle theme={theme}/>
           <ThemeToggle toggler={setMode}/>
+          <Shop/>
       </>
   );
 }

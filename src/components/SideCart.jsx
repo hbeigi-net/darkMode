@@ -17,16 +17,30 @@ const List = styled.ul`
   padding : 5px ; 
 
 `
+
+const Overlay = styled.div`
+  position : fixed  ; 
+  width : 100vw ; 
+  height : 100vh ; 
+  z-index : 1 ; 
+  transition : all 432ms ease ; 
+
+`
 export default function SideCart() {
   const {theme}=useTheme(); 
-    const [open , setOpen] = useState(true);
+    const [open , setOpen] = useState(false);
 
     return (
       <>
         <button onClick={(e)=>setOpen(!open)}  style={{right : "50px"}}>
           toggle
         </button>
-        <Drawer width ={300} open ={!open} mode ={theme.mode} >
+        {
+          open && <Overlay className="hello world" onClick={(e)=>{
+            console.log("hello world");
+            setOpen(false)}}/>
+        }
+        <Drawer width ={300} open ={open} mode ={theme.mode} >
           <div className="position-relative d-flex flex-column " style={{height : "90vh"}}>
 
           <div className="sideCartHeader pt-2 text-center mb-3">
@@ -40,7 +54,6 @@ export default function SideCart() {
               <SideCartItem />
               <SideCartItem />
               <SideCartItem />
-         
             </List>
           </div>
 

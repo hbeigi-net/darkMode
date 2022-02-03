@@ -8,57 +8,55 @@ import styled from "styled-components"
 import CheckBoxList from './checkBoxList'
 import Grid from '@mui/material/Grid';
 
-
-const Paper = styled.div`
-    width : 240px ; 
-    
-`
 export default function ShopFilters() {
   return (
             <>
-        <div className='col-12 col-md-4 col-lg-12'>
-                <Accordion defaultExpanded={true} sx={{color :"blue" , backgroundColor :"rosybrown" }}square ={true} disableGutters>
-                    <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1a-content"
-                    id="panel1a-header"
-                    >
-                    <Typography>مردانه </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails sx={{px : "0"}}>
-                        <CheckBoxList/>
-                    </AccordionDetails>
-                </Accordion>
-        </div>
-        <div className='col-12 col-md-4 col-lg-12'>
-                <Accordion defaultExpanded={true} sx={{color :"blue" , backgroundColor :"rosybrown" }}square ={true} disableGutters>
-                    <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1a-content"
-                    id="panel1a-header"
-                    >
-                    <Typography>مردانه </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails sx={{px : "0"}}>
-                        <CheckBoxList/>
-                    </AccordionDetails>
-                </Accordion>
-        </div>
-        <div className='col-12 col-md-4 col-lg-12'>
-                <Accordion defaultExpanded={true} sx={{color :"blue" , backgroundColor :"rosybrown" }}square ={true} disableGutters>
-                    <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1a-content"
-                    id="panel1a-header"
-                    >
-                    <Typography>مردانه </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails sx={{px : "0"}}>
-                        <CheckBoxList/>
-                    </AccordionDetails>
-                </Accordion>
-        </div>
-                        </>
+                <Grid item  xs={12} sm={4} md={12}>
+
+                    <Accordion defaultExpanded={true} sx={{color :"blue" , backgroundColor :"rosybrown" }}square ={true} disableGutters>
+                        <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                        >
+                        <Typography>مردانه </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails sx={{px : "0"}}>
+                            <CheckBoxList/>
+                        </AccordionDetails>
+                    </Accordion> 
+                </Grid>
+                <Grid item  xs={12} sm={4} md={12}>
+
+                    <Accordion defaultExpanded={true} sx={{color :"blue" , backgroundColor :"rosybrown" }}square ={true} disableGutters>
+                        <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                        >
+                        <Typography>مردانه </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails sx={{px : "0"}}>
+                            <CheckBoxList/>
+                        </AccordionDetails>
+                    </Accordion> 
+                </Grid>
+                <Grid item  xs={12} sm={4} md={12}>
+
+                    <Accordion defaultExpanded={true} sx={{color :"blue" , backgroundColor :"rosybrown" }}square ={true} disableGutters>
+                        <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                        >
+                        <Typography>مردانه </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails sx={{px : "0"}}>
+                            <CheckBoxList/>
+                        </AccordionDetails>
+                    </Accordion> 
+                </Grid>
+            </>
 
   );
 }

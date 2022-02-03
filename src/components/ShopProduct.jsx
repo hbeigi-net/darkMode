@@ -6,9 +6,6 @@ import Btn2 from "./subc/btn2"
 const Paper = styled.div`
     background-color : ${props=> "#5495e6"};
     box-shadow : 0 0 2px black ; 
-    max-width : 350px ; 
-    margin-right : 300px ; 
-    margin-top : 100px ; 
     position :relative ; 
     overflow:hidden ; 
     border-radius :5px ; 

@@ -49,7 +49,7 @@ const CsutomSwitch = styled(Switch)(({ theme }) => ({
     borderRadius: 20 / 2,
   },
 }));
-q
+
 export default function ThemeToggle() {
     const {mode , setMode , theme} =useTheme();
     const [checked, setChecked] = useState(false);

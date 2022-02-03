@@ -4,6 +4,7 @@ import IconButton from '@mui/material/IconButton';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import { faker } from 'https://cdn.skypack.dev/@faker-js/faker';
+
 const Paper = styled.div`
   width : 100% ; 
   padding-right: 5px ;
@@ -11,9 +12,10 @@ const Paper = styled.div`
   margin-left : auto ;
   border-radius : 3px;
   position :relative ; 
-  overflow : hidden !important ;  
+  overflow :hidden !important ;  
   background-color : #6db5e6 ; 
   max-height : 70px;
+  z-index :10 ;
 
 `
 const PrImg = styled.img`
